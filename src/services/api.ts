@@ -4,7 +4,7 @@ import { Game } from '../App'
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:4000'
+    baseUrl: 'https://fake-api-tau.vercel.app'
   }),
   endpoints: (builder) => ({
     getJogos: builder.query<Game[], void>({
